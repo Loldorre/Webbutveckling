@@ -1,0 +1,93 @@
+body{
+    font-family: Centaur;
+    background-color: #250902;
+    margin: 0;
+}
+.banner{
+    width: 100%;
+    background-color: #C8AB83;
+    padding-bottom: 10px;
+}
+.banner img{
+    float: left;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 50px;
+    width: 50px;
+
+}
+.banner h1, p{
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: left;
+}
+.banner p{
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: left;
+}
+.navbar{
+    background-color: #EEC584;
+    margin: 0;
+    border-left: #C8AB83 10px;
+}
+.navbar a{
+    padding: 7px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px blue;
+}
+
+.navbar a:hover{
+    background-color: #C8AB83;
+}
+.content{
+    display: inline-block;
+    margin-top: 0;
+    background-color: #38040E;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100%;
+
+}
+.content h1, p{
+    color: antiquewhite;
+    margin-top: 0;
+    padding-top: 15px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px
+}
+.content p{
+    font-size: 18px;
+    padding-top: 0;
+}
+.intro{
+    margin-top: 25px;
+}
+.intro img{
+    max-height: 250px;
+    height: 18%;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.history{
+    margin-top: 25px;
+}
+.history img{
+    float: right;
+    width: 30%;
+}
+.history p{
+    text-align: left;
+    display: -webkit-box;
+    margin-right: auto;
+
+}
+
