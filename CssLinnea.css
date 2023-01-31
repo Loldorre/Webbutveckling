@@ -1,5 +1,5 @@
 header {
-    background-color: #C0DFD9;
+    background-color: #F9A03F;
     text-align: center;
     padding: 7px;
 }
@@ -10,15 +10,17 @@ header h1, p{
 body{
     margin: 0;
     padding: 0;
-    font-family: Serif;
-    background-color: #545B5A;
+    font-family: "Goudy Old Style";
+    background-color: #454955;
 }
 .navbar{
-    background-color: #BCCBC9;
+    background-color: #F3EFF5;
     width:15%;
     min-width: 120px;
     height: 100%;
     position: fixed;
+    margin-right: 25px;
+
 }
 .navbar a{
     font-weight: bold;
@@ -26,19 +28,25 @@ body{
     font-size: 25px;
     padding: 15px 7px 15px ;
     text-align: center;
-    display: block;
     text-decoration: none;
+    display: block;
+    margin:0;
 }
 
 .navbar a:hover{
-    background-color: #AAB8B6;
-
+    background-color: #FCCE9C;
+}
+.navbar a:active{
+    background-color: #F9A03F;
 }
 .content{
-    margin-left: 20%;
-    margin-right: 5%;
-    margin-top: 5%;
+    margin-left: 18%;
+    margin-right: 3%;
+    margin-top: 3%;
     background-color: white;
     padding: 15px 15px 15px 25px;
     border-radius: 5px;
+}
+.content img{
+    max-width:150px;
 }

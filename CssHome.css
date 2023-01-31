@@ -30,11 +30,14 @@ body{
     text-align: center;
     text-decoration: none;
     display: block;
+    margin:0;
 }
 
 .navbar a:hover{
+    background-color: #FCCE9C;
+}
+.navbar a:active{
     background-color: #F9A03F;
-
 }
 .content{
     margin-left: 18%;
