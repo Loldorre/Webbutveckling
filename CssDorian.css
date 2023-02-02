@@ -7,6 +7,11 @@ header h1, p{
     margin: 0;
     padding: 0;
 }
+header img{
+    float:left;
+    width: 64px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -17,7 +22,7 @@ body{
     background-color: #F3EFF5;
     width:15%;
     min-width: 120px;
-    height: 134%;
+    height: 110%;
     position: absolute;
     margin:0;
     padding: 0;
@@ -49,13 +54,28 @@ body{
     padding: 15px 15px 15px 25px;
     border-radius: 5px;
 }
+.content p{
+    display: inline;
+}
+#dorre{
+    width: 150px;
+    float: right;
+}
 .linkpics img{
+    float:left;
     margin-top: 15px;
     width: 75px;
     height: 75px;
-    margin-left:42%;
+    margin-bottom: 10px;
+}
+.linkpics img:hover{
+    width:80px;
+    height:80px;
+}
 
+.content h2{
+    margin-top: 150px;
+    display: block;
 }
-.content img{
-    max-width:150px;
-}
+
+

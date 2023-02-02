@@ -7,6 +7,10 @@ header h1, p{
     margin: 0;
     padding: 0;
 }
+header img{
+    float:left;
+    width: 64px;
+}
 body{
     margin: 0;
     padding: 0;
@@ -14,12 +18,14 @@ body{
     background-color: #454955;
 }
 .navbar{
+    margin-top:0;
     background-color: #F3EFF5;
     width:15%;
     min-width: 120px;
-    height: 100%;
-    position: fixed;
+    height: 88%;
+    position: absolute;
     margin-right: 25px;
+    float: left;
 
 }
 .navbar a{

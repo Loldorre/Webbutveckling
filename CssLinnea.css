@@ -7,6 +7,11 @@ header h1, p{
     margin: 0;
     padding: 0;
 }
+header img{
+    float:left;
+    width: 64px;
+}
+
 body{
     margin: 0;
     padding: 0;

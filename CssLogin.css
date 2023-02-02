@@ -7,6 +7,11 @@ header h1, p{
     margin: 0;
     padding: 0;
 }
+header img{
+    float:left;
+    width: 64px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -17,8 +22,8 @@ body{
     background-color: #F3EFF5;
     width:15%;
     min-width: 120px;
-    height: 100%;
-    position: fixed;
+    height: 86.6%;
+    position: absolute;
     margin-right: 25px;
 
 }
@@ -49,7 +54,7 @@ body{
     border-radius: 5px;
     width: 76%;
     height: 72%;
-    position: fixed;
+    position: absolute;
 }
 .content img{
     max-width:150px;
