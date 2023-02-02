@@ -17,13 +17,14 @@ body{
     padding: 0;
     font-family: "Goudy Old Style";
     background-color: #454955;
+    font-style: normal;
 }
 .navbar{
     background-color: #F3EFF5;
     width:15%;
     min-width: 120px;
     height: 100%;
-    position: fixed;
+    position: absolute;
     margin-right: 25px;
 
 }
@@ -54,4 +55,19 @@ body{
 }
 .content img{
     max-width:150px;
+}
+
+#Text2 {
+    font-family: "Goudy Old Style";
+    font-style: italic;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+img {
+    float: left;
+    margin-right: 7%;
+    margin-top: 2.5%;
+    background-color: powderblue;
 }
