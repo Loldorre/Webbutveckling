@@ -54,23 +54,26 @@ body{
     padding: 15px 15px 15px 25px;
     border-radius: 5px;
 }
-.content img{
-    max-width:150px;
-}
+
 
 #Text2 {
     font-family: "Goudy Old Style";
     font-style: italic;
     margin-right: 5%;
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
-.content img {
+
+#Bild1 {
+    width: 150px;
+    height: auto ;
     float: left;
     margin-right: 7%;
     margin-top: 2.5%;
+    margin-bottom: 2.5%;
     background-image: url("/bilder/icons8-airport-50.png")
+
 }
 
 .link:hover {
@@ -79,5 +82,11 @@ body{
     width: 70px;
     height: 70px;
     margin: 12.5% 11.66% 10% 5%;
+}
 
+#Bild2 {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 820px;
+    height: auto;
 }
