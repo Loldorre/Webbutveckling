@@ -6,34 +6,62 @@
 
     <link rel="stylesheet" href="CssLogin.css">
 
+    <script>
+        function checkpwd(password) {
+            let amountOfNum = 0;
+            let amountOfUppercase = 0;
+            for (let i = 0; i < password.length; i++) {
+                if (password.charAt(i) === password.charAt(i).toUpperCase()){
+                    amountOfUppercase++;
+                }
+                if (password.charAt(i).match(/[0-9]/)){
+                    amountOfNum++;
+                }
+            }
+
+            if (password.length < 8) {
+                window.alert("Error: Password must be at least 8 characters");
+            }
+            else if(password.length>7 && amountOfUppercase<2){
+                window.alert("Error: Password must contain at least 2 uppercase letters")
+            }
+            else if (amountOfNum<1){
+                window.alert("Error: Password must contain at least 1 number")
+            }
+
+        }
+    </script>
+
 </head>
 <body>
-<header>
-    <img alt="icon of a sloth" src="bilder/sloth-svgrepo-com.svg">
+    <header>
+        <img alt="icon of a sloth" src="bilder/sloth-svgrepo-com.svg">
 
-    <h1>Dornea</h1>
-    <p><strong>The Ultimate Website of Awesome Things</strong></p>
-</header>
+        <h1>Dornea</h1>
+        <p><strong>The Ultimate Website of Awesome Things</strong></p>
+    </header>
 
-<div class="navbar">
-    <a href="Home.html">Home</a>
-    <a href="Login.html">Login</a>
-    <a href="Dorian.html">Dorian</a>
-    <a href="Linnea.html">Linnea</a>
-</div>
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="Dorian.html">Dorian</a>
+        <a href="Linnea.html">Linnea</a>
+    </div>
 
-<div class="content">
-    <img id="loginicon" alt="login icon" src="bilder/login.bmp">
-    <h1>Login</h1>
-    <form>
-        <label for="username">Username</label><br>
-        <input type="text" id="username" name="uname"><br>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="pwd"><br><br>
-        <input type="submit"  value="Create Account">
-        <input type="submit" value="Login">
-    </form>
+    <div class="content">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img id="loginicon" alt="login icon" src="bilder/login.bmp"></a>
 
-</div>
+       <div class="forms">
+        <h1>Login</h1>
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="uname"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="pwd"><br><br>
+            <button onclick="checkpwd(document.getElementById('password').value)">Create Account</button>
+
+        </form>
+       </div>
+    </div>
 </body>
 </html>
