@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="CssLogin.css">
 
     <script>
-        function checkpwd(password) {
+        function checkPwd(password) {
             let amountOfNum = 0;
             let amountOfUppercase = 0;
             for (let i = 0; i < password.length; i++) {
@@ -28,8 +28,23 @@
             else if (amountOfNum<1){
                 window.alert("Error: Password must contain at least 1 number")
             }
+        }
+
+        function checkUname(username){
+
+            for (let i = 0; i < username.length; i++) {
+                if (!username.charAt(i).match(/[a-z]/) && !username.charAt(i).match(/[A-Z]/) && !username.charAt(i).match(/[0-9]/)){
+                    window.alert("Error: Username can only contain characters or numbers");
+                    break;
+                }
+            }
+
+            if (username.length<4){
+                window.alert("Error: Username must contain at least 5 characters")
+            }
 
         }
+
     </script>
 
 </head>
@@ -58,8 +73,7 @@
             <input type="text" id="username" name="uname"><br>
             <label for="password">Password</label><br>
             <input type="password" id="password" name="pwd"><br><br>
-            <button onclick="checkpwd(document.getElementById('password').value)">Create Account</button>
-
+            <button onclick="checkPwd(document.getElementById('password').value); checkUname(document.getElementById('username').value)">Create Account</button>
         </form>
        </div>
     </div>
