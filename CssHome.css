@@ -57,5 +57,12 @@ body{
 }
 
 #Table1 {
+    width: 50%;
+    position: center;
+    margin-left: 22%;
     margin-top: 5%;
+    border-collapse: collapse;
+
+
 }
+
