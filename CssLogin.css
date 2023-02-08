@@ -19,25 +19,26 @@ body{
     background-color: #454955;
 }
 .navbar{
+    opacity: 70%;
     background-color: #F3EFF5;
     width:15%;
-    min-width: 120px;
-    height: 86.6%;
+    height: 119%;
     position: absolute;
-    margin-right: 25px;
-
+    margin:0;
+    padding: 0;
+    float:left;
 }
 .navbar a{
+    margin: 0;
     font-weight: bold;
     color: black;
-    font-size: 25px;
+    font-size: 100%;
     padding: 15px 7px 15px ;
     text-align: center;
     text-decoration: none;
     display: block;
-    margin:0;
-}
 
+}
 .navbar a:hover{
     background-color: #FCCE9C;
 }
@@ -57,5 +58,13 @@ body{
     position: absolute;
 }
 .content img{
-    max-width:150px;
+    width:150px;
+
+}
+.content img:hover{
+    width: 160px;
+    height: 150px;
+}
+.forms{
+    position: center;
 }
