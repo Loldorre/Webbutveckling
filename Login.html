@@ -11,7 +11,7 @@
             let amountOfNum = 0;
             let amountOfUppercase = 0;
             for (let i = 0; i < password.length; i++) {
-                if (password.charAt(i) === password.charAt(i).toUpperCase()){
+                if (password.charAt(i) == password.charAt(i).toUpperCase()){
                     amountOfUppercase++;
                 }
                 if (password.charAt(i).match(/[0-9]/)){
@@ -34,7 +34,7 @@
 
             for (let i = 0; i < username.length; i++) {
                 if (!username.charAt(i).match(/[a-z]/) && !username.charAt(i).match(/[A-Z]/) && !username.charAt(i).match(/[0-9]/)){
-                    window.alert("Error: Username can only contain characters or numbers");
+                    window.alert("Error: Username can only contain letters or numbers");
                     break;
                 }
             }

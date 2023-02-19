@@ -2,6 +2,7 @@ header {
     background-color: #F9A03F;
     text-align: center;
     padding: 7px;
+    width: 100%;
 }
 header h1, p{
     margin: 0;
@@ -10,22 +11,20 @@ header h1, p{
 header img{
     float:left;
     width: 64px;
+    opacity: 85%;
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    font-family: "Goudy Old Style";
-    background-color: #454955;
+    margin:0;
+    font-family: "Goudy Old Style", serif;
+    background-color: #454955 ;
+    overflow:hidden;
 }
 .navbar{
-    opacity: 70%;
-    background-color: #F3EFF5;
+    background-color: #FCCE9C;
     width:15%;
-    height: 119%;
+    min-height: 90%;
     position: absolute;
-    margin:0;
-    padding: 0;
     float:left;
 }
 .navbar a{
@@ -37,34 +36,34 @@ body{
     text-align: center;
     text-decoration: none;
     display: block;
-
 }
 .navbar a:hover{
-    background-color: #FCCE9C;
-}
-.navbar a:active{
     background-color: #F9A03F;
 }
+
 .content{
     text-align: center;
-    margin-left: 18%;
-    margin-right: 3%;
-    margin-top: 3%;
+    margin: 3% 2% 0% 18%;
     background-color: white;
-    padding: 15px 15px 15px 25px;
+    padding-right:2%;
+    padding-bottom: 1%;
     border-radius: 5px;
-    width: 76%;
-    height: 72%;
+    width: 77%;
+    min-height: 75%;
     position: absolute;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.55);
 }
 .content img{
     width:150px;
-
 }
 .content img:hover{
-    width: 160px;
-    height: 150px;
+    transform: scale(105%);
 }
 .forms{
     position: center;
+}
+.forms input{
+    border-radius: 25px;
+    background-color: #F9A03F;
+    border: 0px;
 }
